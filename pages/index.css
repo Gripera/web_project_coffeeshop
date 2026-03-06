@@ -3,12 +3,12 @@ body {
 }
 
 .page {
-  min-height: 720px;
-  max-height: 800px;
   min-width: 1100px;
+  max-width: 1600px;
   font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
+  line-height: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -58,7 +58,6 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 20px;
 }
 
 .nav__link {
@@ -97,7 +96,7 @@ body {
   max-width: 709px;
 }
 
-.header__title-span {
+.header__span-accent {
   display: block;
   font-family: "Noto Serif";
   letter-spacing: -1px;
@@ -125,32 +124,21 @@ body {
 }
 
 .header__footer {
+  display: flex;
   margin-top: auto;
   font-family: "Inter", Arial, sans-serif;
-  font-style: normal;
+  justify-content: space-between;
   font-size: 16px;
   line-height: 20px;
   width: 100%;
-  color: #838383;
 }
 
 .header__paragraph {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
-.header__hours {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  list-style-type: none;
+  margin: 0;
+  font-style: normal;
+  color: #838383;
 }
 
-.header__address {
-  margin: 0;
-}
 .content {
   display: flex;
   flex-direction: column;
@@ -170,6 +158,7 @@ body {
   padding-left: 80px;
   padding-right: 80px;
   padding-top: 100px;
+  padding-bottom: 215px;
 }
 
 .recipes__title {
@@ -192,25 +181,28 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   row-gap: 20px;
 }
 
-.video__iframe {
+.recipes__iframe {
+  display: flex;
+  align-content: flex-start;
+  align-items: center;
+  justify-content: center;
+}
+
+.recipes__video-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.video-2__iframe {
+.recipes__video-caption {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.video-caption {
+  flex-direction: row;
+  justify-content: space-between;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -218,10 +210,115 @@ body {
   line-height: 30px;
 }
 
-.video-2__caption {
+.reservation {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  color: white;
+  background-image: url("../images/background_reservation.svg");
+  background-color: #d9e7ff;
+  background-size: cover;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  row-gap: 80px;
+}
+
+.reservation__title {
   font-family: "Inter";
   font-style: normal;
+  align-self: center;
+  color: black;
   font-weight: 500;
+  font-size: 44px;
+  margin: 0;
+}
+
+.reservation__form {
+  font-family: "Inter";
+  font-style: normal;
+  color: black;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 385px;
+  width: 100%;
+}
+
+.reservation__form--fieldset {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.reservation__label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.reservation__input {
+  font-family: Inter;
+  font-weight: normal;
+  color: #838383;
   font-size: 20px;
-  line-height: 30px;
+  border-radius: 4px;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  border: 1px solid #838383;
+}
+
+.reservation__button {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  height: 60px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: #2f80ed;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.reservation__button:hover {
+  background-color: #1c5edb;
+  fill-opacity: 70%;
+}
+
+.form__checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: black;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  border-radius: 2px;
+}
+
+.form__checkbox-input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background: transparent;
+  position: relative;
+  border: 1px solid #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__checkbox-input :checked {
+  background-color: #2f80ed;
+  border-color: #2f80ed;
+  background-image: url("../images/check.svg");
 }

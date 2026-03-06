@@ -39,7 +39,7 @@
             </a>
           </li>
           <li>
-            <a class="nav__link" href="#reservations">
+            <a class="nav__link" href="#reservation">
               Reservar Uma Mesa
             </a>
           </li>
@@ -50,7 +50,7 @@
           </li>
         </ul>
       </nav>  
-          <h1 class="header__title"><span class="header__title-span">Café Especial</span>Triple Peaks</h1>
+          <h1 class="header__title"><span class="header__span-accent">Café Especial</span>Triple Peaks</h1>
           <p class="header__description">
             Bem-vindo à nossa zona de estudo! Temos o café para energizar você e vibrações aconchegantes para soltar a criatividade.
           </p>
@@ -59,37 +59,74 @@
           alt="Ilustração 'Dentro da cafeteria'"
           class="header__image"
         />
-      <footer class="header__footer header__footer--paragraph">
-        <p class="header__footer--paragraph header__hours">
-          <p>Horários</p>
-          <p>Segunda a sexta (10:00 – 19:00)</p>
-          <p>Sábado a domingo (11:00 - 18:00)</p>
-        </p>
-        <p class="header__footer--paragraph header__address">200 Success Avenue, a cidade de Triple Peaks</p>
-      </footer>
+      <div class="header__footer">
+        <div class="header__paragraph header__hours">
+          <p class="header__paragraph">Horários</p>
+          <p class="header__paragraph">Segunda a sexta (10:00 – 19:00)</p>
+          <p class="header__paragraph">Sábado a domingo (11:00 - 18:00)</p>
+        </div>
+        <p class="header__paragraph">200 Success Avenue, a cidade de Triple Peaks</p>
+      </div>
     </header>
       <main class="content">
-        <section class="recipes">
-          <h2 class="recipe recipe__title">Receitas</h2>
-          <h3 class="recipe recipe__subtitle" id="recipes">Confira algumas receitas que coletamos para seu lanchinho caseiro:</h3>
+        <section class="recipes" id="recipes">
+          <h2 class="recipes__title">Receitas</h2>
+          <h3 class="recipes__subtitle">Confira algumas receitas que coletamos para seu lanchinho caseiro:</h3>
           <div class="recipes__videos">
-            <figure class="recipe__video video__iframe">
-          <iframe width="480" height="273" src="https://www.youtube.com/embed/j6VlT_jUVPc?si=UOVrby5ExnbIV04Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            <div class="recipes__video-item">
+          <iframe class="recipes__iframe" width="480" height="273" src="https://www.youtube.com/embed/j6VlT_jUVPc?si=UOVrby5ExnbIV04Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
           </iframe>
-          <figcaption class="recipe__video video-caption">
-          <p>Receita Aeropress &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ~5min</p>
-          </figcaption>
-           </figure>
-<figure class="recipe__video-2 video-2__iframe">
-<iframe width="480" height="273" src="https://www.youtube.com/embed/st571DYYTR8?si=S1EiqcZeNPG3saVL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          <p class="recipes__video-caption">
+            <span>Receitas Aeropress</span> 
+             <span>~5min</span>
+          </p>
+           </div>
+           <div class="recipes__video-item">
+<iframe class="recipes__iframe" width="480" height="273" src="https://www.youtube.com/embed/st571DYYTR8?si=S1EiqcZeNPG3saVL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
   </iframe>
-<figcaption class="recipe__video-2 video-2__caption">
-  <p>Receita de Prensa Francesa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ~15min</p>
-</figcaption>
-</figure>  
+<p class="recipes__video-caption">
+  <span>Receita de Prensa Francesa</span> 
+  <span>~15min</span>
+</p>
 </div>   
 </section>
-        <section class="reservation" id="reservations">
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar Uma Mesa</h2>
+           <form class="reservation__form" action="/processar-formulario" method="POST">
+            <div class="reservation__form reservation__form--fieldset">
+
+            <label for="name" class="reservation__label">
+              Nome*:
+             <input type="text" id="name" name="name" class="reservation__input" required
+            placeholder="Nome" />
+            </label>
+        
+
+            <label for="number" class="reservation__label">Número de convidados*:
+            <input type="number" id="number" name="number" class="reservation__input" required min="1" max="8"
+             placeholder="1-8" />
+             </label>
+            
+            <label for="date" class="reservation__label">Data e Hora*:
+            <input type="datetime-local" id="date" name="date" class="reservation__input" required
+             />
+             </label>
+            
+            <label for="email" class="reservation__label">Email*:
+            <input type="email" id="email" name="email" class="reservation__input" required 
+            placeholder="email@email.com" />
+            </label>
+          
+            <button type="submit" class="reservation__button">Reservar uma mesa
+            </button>
+
+             <div class="form__checkbox">
+          <input type="checkbox" id="termos" class="form__checkbox-input" />
+          Eu concordo com os termos de uso
+        </div>
+        </div>
+        </form>
+        </section>
       </main>
       <footer class="footer"></footer>
     </div>
