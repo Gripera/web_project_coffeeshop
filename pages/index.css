@@ -1,8 +1,38 @@
+@import url("../vendor/normalize.css");
+
+/* normalize.css */
+
+/* page.css */
+
+@import url("../blocks/page.css");
+
+/* header.css */
+
+@import url("../blocks/header.css");
+
+/* nav.css */
+
+@import url("../blocks/nav.css");
+
+/* recipes.css */
+
+@import url("../blocks/recipes.css");
+
+/* reservation.css */
+
+@import url("../blocks/reservation.css");
+
+/* footer.css */
+
+@import url("../blocks/footer.css");
+
+/* blocks.css */
+
 body {
   font-family: "Noto Serif", "Times New Roman", serif;
 }
 
-.page {
+/* .page {
   min-width: 1100px;
   max-width: 1600px;
   font-family: "Inter", Arial, sans-serif;
@@ -19,9 +49,11 @@ body {
   width: 100%;
 }
 
+
+
 .header {
   display: flex;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
   flex-direction: column;
   height: 100vh;
   min-height: 720px;
@@ -68,7 +100,7 @@ body {
 
 .header {
   display: flex;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
   flex-direction: column;
   height: 100vh;
   min-height: 720px;
@@ -218,21 +250,23 @@ body {
   background-image: url("../images/background_reservation.svg");
   background-color: #d9e7ff;
   background-size: cover;
-  padding-left: 80px;
-  padding-right: 80px;
   padding-top: 100px;
   padding-bottom: 120px;
-  row-gap: 80px;
 }
 
 .reservation__title {
   font-family: "Inter";
   font-style: normal;
   align-self: center;
+  line-height: normal;
+  line-height: 52px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+  margin-top: 0px;
   color: black;
   font-weight: 500;
   font-size: 44px;
-  margin: 0;
 }
 
 .reservation__form {
@@ -247,7 +281,7 @@ body {
   width: 100%;
 }
 
-.reservation__form--fieldset {
+.form__fieldset {
   display: flex;
   flex-direction: column;
   row-gap: 32px;
@@ -265,10 +299,11 @@ body {
   color: #838383;
   font-size: 20px;
   border-radius: 4px;
-  padding-top: 15px;
+  padding-top: 32px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 15px;
+  margin-bottom: 32px;
   border: 1px solid #838383;
 }
 
@@ -282,6 +317,7 @@ body {
   font-size: 16px;
   border-radius: 4px;
   background-color: #2f80ed;
+  margin-top: 15px;
   color: white;
   border: none;
   cursor: pointer;
@@ -292,7 +328,7 @@ body {
   fill-opacity: 70%;
 }
 
-.form__checkbox {
+.checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -303,7 +339,7 @@ body {
   border-radius: 2px;
 }
 
-.form__checkbox-input {
+.checkbox__input {
   appearance: none;
   width: 20px;
   height: 20px;
@@ -317,8 +353,90 @@ body {
   align-items: center;
 }
 
-.form__checkbox-input :checked {
+.checkbox__input :checked {
   background-color: #2f80ed;
   border-color: #2f80ed;
   background-image: url("../images/check.svg");
 }
+
+.footer {
+  box-sizing: border-box;
+  background-color: #0a2750;
+  padding: 60px 80px;
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-bottom: 100px;
+}
+
+.footer__logo {
+  display: flex;
+  margin-right: auto;
+  bottom: 100px;
+  size: 50%;
+}
+
+.footer__column_content_social {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+  padding-left: 80px;
+  font-weight: 200;
+}
+
+.footer__column-heading {
+  color: white;
+  font-size: 17px;
+  line-height: 10px;
+  font-weight: 500;
+}
+
+.footer__list {
+  O código abaixo remove os estilos do navegador padrão para listas
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: unset;
+  padding-top: 20px;
+}
+
+.footer__list-item {
+  display: flex;
+  flex-direction: row;
+  top: 20px;
+}
+
+.footer__column-link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__social-icon {
+  color: white;
+}
+.footer__social-link {
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+}
+
+.footer__social-link:visited {
+  color: white;
+}
+.footer__column-heading {
+  color: white;
+  margin: 0;
+}
+
+.footer__copyright {
+  color: white;
+  font-weight: 50;
+} 
+
+*/

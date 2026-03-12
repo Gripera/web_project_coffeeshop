@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -92,8 +93,8 @@
 </section>
         <section class="reservation" id="reservation">
           <h2 class="reservation__title">Reservar Uma Mesa</h2>
-           <form class="reservation__form" action="/processar-formulario" method="POST">
-            <div class="reservation__form reservation__form--fieldset">
+           <form class="form reservation__form" action="/processar-formulario" method="POST">
+            <div class="reservation__form reservation__fieldset">
 
             <label for="name" class="reservation__label">
               Nome*:
@@ -116,19 +117,53 @@
             <input type="email" id="email" name="email" class="reservation__input" required 
             placeholder="email@email.com" />
             </label>
+              </div>
           
             <button type="submit" class="reservation__button">Reservar uma mesa
             </button>
-
-             <div class="form__checkbox">
-          <input type="checkbox" id="termos" class="form__checkbox-input" />
+            
+             <div class="checkbox">
+          <input type="checkbox" id="termos" class="checkbox__input" />
           Eu concordo com os termos de uso
         </div>
-        </div>
         </form>
+  
         </section>
       </main>
-      <footer class="footer"></footer>
+     <footer class="footer" id="footer">
+        <div class="footer__columns">
+            <div class="footer__column">
+                    <img
+                src="./images/logo_coffeeshop_light.svg"
+                alt="Logotipo da Biblioteca Triple Peaks"
+                class="footer__logo"
+                />
+                </div>
+                <div class="footer__column footer__column_content_social">
+                    <p class="footer__column-heading">Mídia Social</p>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                    <a href="#" class="footer__social-link footer__column-link">
+                        <img
+                            src="./images/facebook_white.svg"
+                            alt="Facebook icon"
+                            class="footer__social-icon"
+                            />Facebook</a>        
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__social-link footer__column-link">
+                            <img
+                            src="./images/instagram_white.svg"
+                            alt="Instagram icon"
+                            class="footer__social-icon"
+                            />Instagram</a>
+                        </li>
+                    </ul>
+                </div>           
+        </div>
+          <p class="footer__copyright">&copy; 2026 Pedro C. Pro Design & Dev</p>
+    </footer>
+      </div>
     </div>
   </body>
 </html>
