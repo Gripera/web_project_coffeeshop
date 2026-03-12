@@ -1,37 +1,5 @@
-.reservation__form {
-  font-family: "Inter";
-  font-style: normal;
-  color: black;
-  font-weight: 500;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  max-width: 385px;
-  width: 100%;
-}
-
 .form__fieldset {
   display: flex;
   flex-direction: column;
   row-gap: 32px;
-}
-
-.reservation__label {
-  display: flex;
-  flex-direction: column;
-  row-gap: 8px;
-}
-
-.reservation__input {
-  font-family: Inter;
-  font-weight: normal;
-  color: #838383;
-  font-size: 20px;
-  border-radius: 4px;
-  padding-top: 32px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 15px;
-  margin-bottom: 32px;
-  border: 1px solid #838383;
 }

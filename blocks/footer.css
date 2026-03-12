@@ -1,21 +1,21 @@
 .footer {
   box-sizing: border-box;
-  background-color: #000000;
+  background-color: #0a2750;
   background-image:;
   background-size: cover;
   border-radius: 20px;
   padding: 60px 80px;
 }
 
-.footer__columns {
+.footer__content {
   display: flex;
   flex-direction: row;
-  align-items: last baseline;
+  justify-content: space-between;
   box-sizing: border-box;
   padding-bottom: 100px;
 }
 
-.footer__column_content_social {
+.footer__content_social {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -29,7 +29,7 @@
   bottom: 100px;
 }
 
-.footer__column-heading {
+.footer__content_social-heading {
   color: white;
   font-size: 17px;
   line-height: 10px;
@@ -53,24 +53,24 @@
   top: 20px;
 }
 
-.footer__column-link {
+.footer__content-link {
   color: white;
   text-decoration: none;
 }
 
-.footer__social-icon {
+.footer__circle-logo {
   color: white;
 }
-.footer__social-link {
+.footer__circle-link {
   text-decoration: none;
   display: flex;
   gap: 10px;
 }
 
-.footer__social-link:visited {
+.footer__circle-link:visited {
   color: white;
 }
-.footer__column-heading {
+.footer__content_social-heading {
   color: white;
   margin: 0;
 }
