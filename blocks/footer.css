@@ -1,9 +1,9 @@
 .footer {
+  position: relative;
+  overflow: hidden;
   box-sizing: border-box;
   background-color: #0a2750;
-  background-image:;
   background-size: cover;
-  border-radius: 20px;
   padding: 60px 80px;
 }
 
@@ -15,7 +15,17 @@
   padding-bottom: 100px;
 }
 
-.footer__content_social {
+.footer__circle {
+  top: -128px;
+  left: -44px;
+  position: absolute;
+  border-radius: 50%;
+  width: 340px;
+  height: 340px;
+  background-color: #2f80ed;
+}
+
+.footer__social {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -23,13 +33,30 @@
   padding-left: 80px;
 }
 
+.footer__list-item {
+  display: flex;
+  flex-direction: row;
+  top: 20px;
+  text-decoration: none;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
 .footer__logo {
+  z-index: 1;
+  height: 39px;
+  width: 106px;
   display: flex;
   margin-right: auto;
   bottom: 100px;
 }
 
-.footer__content_social-heading {
+.footer__social--heading {
   color: white;
   font-size: 17px;
   line-height: 10px;
@@ -37,7 +64,6 @@
 }
 
 .footer__list {
-  /* O código abaixo remove os estilos do navegador padrão para listas */
   display: flex;
   gap: 16px;
   flex-direction: column;
@@ -47,13 +73,21 @@
   padding-top: 20px;
 }
 
+.footer__social--icon {
+  width: 20px;
+  height: 20px;
+}
+
 .footer__list-item {
   display: flex;
   flex-direction: row;
   top: 20px;
+  text-decoration: none;
 }
 
-.footer__content-link {
+.footer__social-link {
+  display: flex;
+  flex-direction: row;
   color: white;
   text-decoration: none;
 }
