@@ -30,3 +30,7 @@
   text-decoration: none;
   font-weight: normal;
 }
+
+.nav__link:hover {
+  color: #2f80ed;
+}

@@ -81,27 +81,6 @@
   row-gap: 32px;
 }
 
-.reservation__button {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px;
-  height: 60px;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 4px;
-  background-color: #2f80ed;
-  margin-top: 15px;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.reservation__button:hover {
-  background-color: #1c5edb;
-  fill-opacity: 70%;
-}
-
 .reservation__checkbox {
   display: flex;
   align-items: center;
@@ -131,4 +110,25 @@
   background-color: #2f80ed;
   border-color: #2f80ed;
   background-image: url("../images/check.svg");
+}
+
+.form__button {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  height: 60px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: #2f80ed;
+  margin-top: 15px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  background-color: #1c5edb;
+  fill-opacity: 70%;
 }
