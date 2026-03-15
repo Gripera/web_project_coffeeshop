@@ -56,7 +56,7 @@
   bottom: 100px;
 }
 
-.footer__social--heading {
+.footer__social-heading {
   color: white;
   font-family: "Inter";
   font-style: normal;
@@ -75,7 +75,7 @@
   padding-top: 20px;
 }
 
-.footer__social--icon {
+.footer__social-icon {
   width: 20px;
   height: 20px;
 }
